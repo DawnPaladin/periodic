@@ -1,0 +1,12 @@
+URL> http://tvtropes.org/pmwiki/createconversation.php?topic=000000000000000000000000
+Subject> Request: Content-only view
+
+I'm making a web version of the [[http://dawnpaladin.deviantart.com/art/Periodic-Table-of-Storytelling-203548951 Periodic Table of Storytelling]]! People will be able to click on a trope in the table and jump directly to its wiki page. Should make a nice entry point for the wiki.
+
+I'd like to have a "preview window" appear when people mouse over a cell. This will let them start reading about a trope before they commit to clicking on it. I could copy & paste the wiki content into a separate file that I would reference through JavaScript, but I'd much rather have a live view into the wiki. That way when a page changes, the previews won't go out of date.
+
+I could just use JavaScript to load the appropriate wiki page into a preview window when needed; the problem is that will include all the navigation elements on the top and left sides. That will not make for an attractive preview. I'm looking for a way to show just the wiki content for each trope page (or at least the first few paragraphs thereof).
+
+Is there a URL parameter I can pass in that will persuade the wiki to show me just the wiki content without all the navigation elements? If not, could I ask FastEddie to add an HTML anchor at the start of the wiki content (right around where the <!--PageText--> comment is now)? Then I could at least have the JavaScript scroll down to the correct spot, and maybe I can enact some trickery that will hide the left-side nav bar.
+
+Would such a preview be an unacceptable load on TVTropes' servers? I certainly don't want to hurt the wiki. I'm open to suggestions on ways to improve performance.
