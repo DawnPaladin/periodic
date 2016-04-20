@@ -35,13 +35,25 @@ a:hover {
 .legend { /* as emptyCell, but: */
 	height: 285px;
 }
+.license {
+	float: left;
+	font-family: "PT Sans";
+	font-size: 12px;
+	text-align: center;
+	margin: 1em;
+}
 .posterPlug { /* as emptyCell, but: */
-	width: 390px;
+	float: right;
+	text-align: right;
+	width: 408px;
 	height: 45px;
 	font-family: "PT Sans";
-	font-size: 15px;
-	padding: 20px;
+	font-size: 12px;
+	padding: 18px;
 	z-index: 1;
+}
+.posterPlug big {
+	font-size: 1.75em;
 }
 .posterPlug a, #interaction a {
 	color: #003f7f;
@@ -49,47 +61,45 @@ a:hover {
 .posterPlug p, #interaction p, #sharing p {
 	margin: .2em 0;
 }
-#interaction {
+.posterTilt {
 	float: right;
 	position: relative;
-	width: 610px; /*old: 427*/
-	height: 45px;
-	margin-right: 20px;
-	padding: 20px;
+	height: 80px;
+	top: -1.5em;
+	margin-left: 1em;
+	border: 1px solid silver;
+	transform: rotate(10deg);
+	transition: transform .25s;
+}
+.posterPlug:hover .posterTilt {
+	transform: rotate(14deg);
+}
+.contact {
+	float: left;
+	width: 427px;
 	font-family: "PT Sans";
-	font-size: 15px;
+	font-size: 18px;
 	text-align: right;
-}
-#sharing {
-	float: left;
 	position: relative;
-	text-align: center;
-	width: 185px;
 }
-.socialite {
-	float: left;
-	margin: 0 5px;
-	background: url('img/social-sprite.png') 0 0 no-repeat;
+.moreStuff {
+	width: 205px;
+	right: 100px;
+	position: absolute;
 }
-.twitter-share { width: 55px; height: 65px; background-position: 0 0; }
-.googleplus-one { width: 50px; height: 65px; background-position: -75px 1px; }
-.facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
+.logo {
+	width: 93px;
+	margin: 1em 1em 0 -1em;
+	float: right;
+	transition: transform .25s;
+}
+.contact a:hover img {
+	transform: translateY(-5px);
+}
+.moreStuff {
+	margin-top: 2em;
+}
 
-.googleplus-one {
-	padding: 1px 0;
-}
-#aboutMe {
-	width: 143px;
-	float: left;
-	margin: 0 20px;
-}
-#aboutMe img, #aboutMe div {
-	float: left;
-	position: relative;
-}
-.ad {
-	float: left;
-}
 .columnLabel, .twoColumnLabel {
 	bottom: 5px;
 	position: absolute;
@@ -167,7 +177,7 @@ a:hover {
 
 #footer {
 	width: 1220px;
-	margin: auto;
+	margin: 80px auto 0;
 }
 
 #footer p {
@@ -267,4 +277,3 @@ a:hover {
 	clear: left;
 	visibility: hidden;
 }
-

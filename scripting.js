@@ -115,7 +115,6 @@ $(document).ready(function() {
 		}, 3500);
 	}
 	pulseTable();
-	setTimeout("Socialite.load('#sharing')", 3000); //wait for the table pulse to finish, then load social buttons
 	setInterval(pulseTable, 60000); //pulse the table every 60 seconds
 
 	$('.cell').hover(function(){ // mouse enters
@@ -123,8 +122,8 @@ $(document).ready(function() {
 		// This next bit of code runs the preview box. It was an idea I had where you could hover over a trope cell and see the first few lines of the trope page describing it, loaded in an iframe directly from TVTropes - you could learn about the trope without even clicking on it. Unfortunately, TVTropes has "breakout" code installed designed to prevent people from loading the site in an iframe; the sandboxing feature I found to get around that only works in Chrome. Also, because of the restrictions on cross-site scripting, finding the right spot on the TVTropes page was tricky; I couldn't consistently make the preview show up inside the preview box. This made the preview look terrible, so I disabled it. It probably would have caused undue server load, anyway. But I couldn't bring myself to scrap the entire feature, so all the code is still here. If you'd like to play with it, type enableTestingFunctions() in the JavaScript console and then check the box that appears.
 
 		var previewBoxEnabled = $('#previewSwitch').is(':checked');
-		if (previewBoxEnabled === true) { // alert('Preview box checked'); }; 
-			
+		if (previewBoxEnabled === true) { // alert('Preview box checked'); };
+
     		$('#previewWindow').css("visibility", "visible");
 			$('#tropePreview').attr("src", $(this).parent().attr("href")); //change the contents of the preview window when user hovers over a cell
 			var loc = $(this).offset(); //get location of hovered cell
@@ -148,13 +147,13 @@ $(document).ready(function() {
 	    	}
     	}
 
-		highlightCell(this);		
+		highlightCell(this);
 
 	}, function () { // mouse leaves
 		$('#previewWindow').css("visibility", "hidden");
 		dehighlightCell(this);
 	});
-	
+
 	$('.molecule').click(function() {
 		if (pinnedStoryMolecule) {
 			if (pinnedStoryMolecule.get(0) == $(this).get(0)) { // Fires when the user clicks on the story that was already pinned. get(0) strips out the jQuery wrapper around an object so we can successfully compare DOM objects
@@ -190,4 +189,3 @@ $(document).ready(function() {
 		};
 	});
 });
-
