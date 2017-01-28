@@ -87,6 +87,13 @@ a:hover {
 	right: 100px;
 	position: absolute;
 }
+.hireMe {
+	background: rgb(150, 217, 242);
+	border-radius: 2px;
+	display: inline;
+	font-size: .7em;
+	padding: 2px 3px;
+}
 .logo {
 	width: 93px;
 	margin: 1em 1em 0 -1em;
