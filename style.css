@@ -284,3 +284,7 @@ a:hover {
 	clear: left;
 	visibility: hidden;
 }
+
+.hidden {
+	display: none;
+}
