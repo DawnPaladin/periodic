@@ -40,52 +40,33 @@ a:hover {
 	font-family: "PT Sans";
 	font-size: 12px;
 	text-align: center;
-	margin: 1em;
+	margin: 2em 1em;
 }
-.posterPlug { /* as emptyCell, but: */
-	float: right;
-	text-align: right;
-	width: 408px;
-	height: 45px;
-	font-family: "PT Sans";
-	font-size: 12px;
-	padding: 18px;
-	z-index: 1;
-}
-.posterPlug big {
-	font-size: 1.75em;
-}
-.posterPlug a, #interaction a {
-	color: #003f7f;
-}
-.posterPlug p, #interaction p, #sharing p {
-	margin: .2em 0;
-}
-.posterTilt {
-	float: right;
-	position: relative;
-	height: 80px;
-	top: -1.5em;
+.metadata {
+	float: left;
+	display: flex;
+	flex-direction: row;
 	margin-left: 1em;
-	border: 1px solid silver;
-	transform: rotate(10deg);
-	transition: transform .25s;
-}
-.posterPlug:hover .posterTilt {
-	transform: rotate(14deg);
 }
 .contact {
-	float: left;
-	width: 427px;
+	float: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 330px;
 	font-family: "PT Sans";
 	font-size: 18px;
 	text-align: right;
 	position: relative;
+	margin-right: 1em;
+}
+.contact a {
+	display: flex;
+	flex-direction: row;
 }
 .moreStuff {
 	width: 205px;
 	right: 100px;
-	position: absolute;
 }
 .hireMe {
 	background: rgb(150, 217, 242);
@@ -95,13 +76,8 @@ a:hover {
 	padding: 2px 3px;
 }
 .logo {
-	width: 93px;
-	margin: 1em 1em 0 -1em;
-	float: right;
-	transition: transform .25s;
-}
-.contact a:hover img {
-	transform: translateY(-5px);
+	width: 62px;
+	margin-top: 18px;
 }
 .moreStuff {
 	margin-top: 2em;
